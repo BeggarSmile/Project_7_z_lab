@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFEFD5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aboutGradientController">
+   <children>
+      <TextArea cache="true" editable="false" layoutX="15.0" layoutY="85.0" prefHeight="300.0" prefWidth="260.0" text="Градиентный спуск — метод нахождения локального экстремума (минимума или максимума) функции с помощью движения вдоль градиента. Для минимизации функции в направлении градиента используются методы одномерной оптимизации, например, метод золотого сечения. Также можно искать не наилучшую точку в направлении градиента, а какую-либо лучше текущей.Наиболее простой в реализации из всех методов локальной оптимизации. Имеет довольно слабые условия сходимости, но при этом скорость сходимости достаточно мала (линейна)." wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea layoutX="325.0" layoutY="85.0" prefHeight="300.0" prefWidth="260.0" text="Мы берем вектор, который указывает направление наибольшего возрастания функции (градиент) и топаем в противоположную сторону. По логике вещей рано или поздно, двигаясь в сторону наибольшего уменьшения функции, мы дойдем до минимальной точки. Для поиска шага мы используем метод &quot;Золотого сечения&quot;." wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="84.0" layoutY="50.0" text="Научным языком">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="50.0" text="Простыми словами">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="14.0" text="Наискорейший спуск">
+         <font>
+            <Font name="Caladea Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="555.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadRootPage" prefHeight="30.0" prefWidth="30.0" text="&lt;-" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="320.0" prefWidth="920.0" style="-fx-background-color: #DEB887;">
+         <children>
+            <Button fx:id="gradientButton" layoutX="110.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Вычислить" />
+            <Button fx:id="gradientAboutButton" layoutX="20.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadAboutGradient" prefHeight="30.0" prefWidth="70.0" text="Справка" />
+            <Button fx:id="coordinateButton" layoutX="425.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Вычислить" />
+            <Button fx:id="coordinateAboutButton" layoutX="335.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadAboutCoordinate" prefHeight="30.0" prefWidth="70.0" text="Справка" />
+            <Label layoutX="394.0" layoutY="14.0" text="Вариант" textFill="#430606">
+               <font>
+                  <Font name="System Italic" size="32.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" accessibleText="12" layoutX="375.0" layoutY="61.0" prefWidth="170.0" />
+            <TextField fx:id="answerGradientText" layoutX="20.0" layoutY="150.0" prefWidth="240.0" />
+            <Label layoutX="20.0" layoutY="125.0" text="Ответ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="100.0" text="Наискорейший" textFill="#030000" underline="true">
+               <font>
+                  <Font name="Caladea Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="100.0" text="Покоординатный" textFill="#030000" underline="true">
+               <font>
+                  <Font name="Caladea Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="answerCoordinateText" layoutX="335.0" layoutY="150.0" prefWidth="240.0" />
+            <Label layoutX="335.0" layoutY="125.0" text="Ответ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="answerPatternText" layoutX="650.0" layoutY="150.0" prefWidth="240.0" />
+            <Label layoutX="699.0" layoutY="100.0" text="Хука-Дживса" textFill="#030000" underline="true">
+               <font>
+                  <Font name="Caladea Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="patternAboutButton" layoutX="650.0" layoutY="220.0" mnemonicParsing="false" onAction="#loadAboutPattern" prefHeight="30.0" prefWidth="70.0" text="Справка" />
+            <Button fx:id="patternButton" layoutX="740.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Вычислить" />
+            <Label layoutX="650.0" layoutY="125.0" text="Ответ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="answerGradientText1" layoutX="20.0" layoutY="185.0" prefWidth="240.0" />
+            <TextField fx:id="answerCoordinateText1" layoutX="335.0" layoutY="185.0" prefWidth="240.0" />
+            <TextField fx:id="answerPatternText1" layoutX="650.0" layoutY="185.0" prefWidth="240.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="332.0" layoutY="14.0" text="gcpMethods" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="FuckMyLifeButton" layoutX="751.0" layoutY="17.0" mnemonicParsing="false" onAction="#loadSourceList" prefHeight="25.0" prefWidth="125.0" text="Список источников" />
+   </children>
+</AnchorPane>

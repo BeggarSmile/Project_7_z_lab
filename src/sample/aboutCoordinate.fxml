@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFEFD5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aboutCoordinateController">
+   <children>
+      <TextArea layoutX="15.0" layoutY="85.0" prefHeight="300.0" prefWidth="260.0" text="Согласно этому методу направления спуска выбираются параллельно координатным осям. Совершается цикл: производится спуск вдоль первой оси ОХ1, затем вдоль оси ОХ2 и т.д. до последней оси ОХn. Под циклом понимается тот момент, когда проварьированы все переменные. Эти действия повторяются в цикле вплоть до достижения оптимума." wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea layoutX="325.0" layoutY="85.0" prefHeight="300.0" prefWidth="260.0" text="Берем рандомную точку, которая лежит в ОДЗ. Фиксируем все переменные кроме одной и начинаем шагать исключительно вдоль неё. Допустим мы шагаем вдоль х. Идем немного влево и вправо вдоль оси и проверяем в какую сторону функция уменьшилась. Выбираем в какую сторону шагать и шагаем до тех пор пока функция убывает. После чего повторяем алгоритм для y,z...n и так далее. После возвращаемся снова к х и проверяем в минимуме ли мы? Если да, алгоритм закончен, если нет повторяем до победного." wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="84.0" layoutY="50.0" text="Научным языком">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="50.0" text="Простыми словами">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="14.0" text="Покоординатный спуск">
+         <font>
+            <Font name="Caladea Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="555.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadRootPage" prefHeight="30.0" prefWidth="30.0" text="&lt;-" />
+   </children>
+</AnchorPane>
